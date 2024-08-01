@@ -3,6 +3,8 @@ import Home from "./pages/Home";
 import Sobre from "./pages/Sobre";
 import Contacto from "./pages/Contacto";
 import Header from "./components/Header"
+import Notfound from "./pages/Notfound";
+import Produto from "./pages/Produto";
 
 
 
@@ -16,6 +18,8 @@ const RoutesApp = () => {
             <Route path="/" element={<Home />} />
             <Route path="/sobre" element={<Sobre />} />
             <Route path="/contacto" element={<Contacto />} />
+            <Route path="/produto/:id" element={<Produto />} />
+            <Route path="*" element={<Notfound/>} />
           </Routes>
         </BrowserRouter>
      
